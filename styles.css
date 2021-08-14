@@ -1,0 +1,75 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    width: 800px;
+    margin: auto;
+    font-family: "Berkshire Swash";
+    background-image: linear-gradient(180deg, #e3434b, #e3434b, #f2c32c);
+}
+
+#header-img {
+    width: 10%;
+    display: flex;
+    margin: auto auto 0 0;
+}
+
+#nav-bar {
+    position: fixed;
+    display: flex;
+    background-color: #e3434b;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px 0 0;
+}
+
+nav a {
+    margin: 0px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #32276a;
+    font-size: 22px;
+}
+
+#video {
+    display: block;
+    padding: 100px;
+    margin: auto;
+}
+
+#email {
+    display: block;
+    margin: auto auto 10px auto;
+    width: 50%;
+    border: none;
+    padding: 10px;
+}
+
+#submit {
+    display: block;
+    margin: auto;
+    border: none;
+    padding: 12px;
+    text-align: center;
+}
+
+#valores {
+    height: 700px;
+}
+
+#contato {
+    margin: 10px;
+}
+
+footer {
+    width: 100%;
+    color: white;
+    background-color: black;
+    height: 50px;
+    font-family: "Open Sans";
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+    margin: 30px 0 0;
+}
