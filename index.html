@@ -6,15 +6,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
     <header id="header">
         <nav id="nav-bar">
+
             <img src="https://i.ibb.co/GP9YmXb/Vers-o-preta.png" id="header-img">
-            <a href="#servico" class="nav-link">Serviço</a>
-            <a href="#valores" class="nav-link">Valores</a>
-            <a href="#contato" class="nav-link">Contato</a>
+
+            <div class="links-container">
+                <a href="#servico" class="nav-link">Serviço</a>
+                <a href="#valores" class="nav-link">Valores</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </div>
         </nav>
     </header>
 
@@ -29,7 +34,7 @@
         </section>
 
         <section id="contato">
-            <form id="form" action="#">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
                 <label for="email">
                     <input type="email" id="email" placeholder="Enter your email for the latest news">
                     <button type="submit" id="submit">Entre em Contato</button>
