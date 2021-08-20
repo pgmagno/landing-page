@@ -2,15 +2,23 @@ html {
     min-height: 100%;
 }
 
+:root {
+    --prussian-blue: hsla(201, 100%, 14%, 1);
+    --maximum-red: hsla(0, 69%, 50%, 1);
+    --orange: hsla(31, 100%, 48%, 1);
+    --maximum-yellow-red: hsla(40, 97%, 64%, 1);
+    --lemon-meringue: hsla(51, 55%, 82%, 1);
+}
+
 body {
     width: 800px;
     margin: auto;
     font-family: "Berkshire Swash";
-    background-image: linear-gradient(180deg, #e3a1a1, #e3a1a1, #e3434b);
+    background-color: var(--maximum-yellow-red);
 }
 
 #header-img {
-    width: 70px;
+    width: 120px;
     display: flex;
 }
 
@@ -18,7 +26,7 @@ body {
     width: 800px;
     position: fixed;
     display: flex;
-    background-color: #e3a1a1;
+    background-color: var(--maximum-yellow-red);
     align-items: center;
     justify-content: space-between;
 }
@@ -27,8 +35,12 @@ nav a {
     margin: 0px 15px;
     text-decoration: none;
     font-weight: bold;
-    color: #32276a;
-    font-size: 22px;
+    color: var(--prussian-blue);
+    font-size: 26px;
+}
+
+a:hover {
+    color: var(--maximum-red);
 }
 
 #servico {
@@ -41,37 +53,54 @@ nav a {
     margin: auto;
 }
 
-#email {
-    display: block;
-    margin: auto auto 10px auto;
-    width: 50%;
+#email-box {
     border: none;
+    width: 60%;
     padding: 10px;
 }
 
 #submit {
-    display: block;
-    margin: auto;
     border: none;
-    padding: 12px;
     text-align: center;
+    height: 35px;
 }
 
 #valores {
-    height: 700px;
+    background-color: var(--orange);
+    margin: 30px auto;
 }
 
-#contato {
+table {
+    margin: auto;
+    border: solid 5px black;
+    border-radius: 5px;
+}
+
+td {
     margin: 10px;
+    width: 50px;
+    border: solid 5px black;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: nowrap;
 }
 
 footer {
     color: white;
-    background-color: black;
     height: 50px;
     font-family: "Open Sans";
-    font-size: 12px;
+    font-size: 16px;
+    font-weight: bold;
     text-align: center;
     padding: 10px;
     margin: 30px 0 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
 }
