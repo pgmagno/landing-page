@@ -17,11 +17,14 @@ body {
 }
 
 #header-img {
+    padding-left: 20px;
     width: 140px;
     display: flex;
+    z-index: 2;
 }
 
 #nav-bar {
+    z-index: 2;
     width: 100%;
     position: fixed;
     display: flex;
@@ -29,6 +32,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding-right: 100px;
+    box-shadow: -1px 1px 10px #777777, 1px 1px 10px #777777;
 }
 
 nav a {
@@ -45,13 +49,16 @@ a:hover {
 
 #servico {
     width: 100%;
-    background-color: var(--maximum-yellow-red);
     padding-bottom: 50px;
+    background-color: #e5e5f7;
+    opacity: 1;
+    background-size: 10px 10px;
+    background-image: repeating-linear-gradient(45deg, var(--maximum-yellow-red) 0, var(--maximum-yellow-red) 1px, var(--maximum-yellow-red) 0, var(--lemon-meringue) 50%);
 }
 
 #video {
     display: block;
-    padding: 150px 0 0;
+    padding: 180px 0 0;
     margin: auto;
 }
 
@@ -68,9 +75,10 @@ a:hover {
 }
 
 #valores {
-    background-color: var(--orange);
+    background-color: var(--prussian-blue);
     width: 100%;
     margin: auto;
+    padding: 60px 0;
 }
 
 .set {
@@ -82,6 +90,10 @@ a:hover {
     .set {
         margin: auto;
         width: 800px;
+    }
+
+    #email-box {
+        width: 30%;
     }
 }
 
@@ -95,6 +107,11 @@ a:hover {
 
     #nav-bar {
         justify-content: flex-start;
+    }
+
+    #form {
+        width: 100%;
+        padding: 0;
     }
 
     .card {
@@ -122,11 +139,18 @@ a:hover {
 }
 
 .card button {
+    font-size: 18px;
+    font-family: "Open Sans";
+    font-weight: bold;
     margin: 15px;
     border: none;
     border-radius: 3px;
     height: 40px;
-    width: 70%;
+    width: 80%;
+}
+
+.card:hover {
+    box-shadow: -1px 1px 10px cyan, 1px 1px 10px magenta;
 }
 
 .card h2 {
@@ -136,23 +160,27 @@ a:hover {
 #form {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 80%;
     flex-wrap: nowrap;
 }
 
 #form button {
+    font-weight: bold;
+    text-transform: uppercase;
     background-color: var(--maximum-red);
 }
 
 #contato {
+    justify-content: center;
+    margin: auto;
     display: flex;
     align-items: center;
-    background-color: var(--maximum-yellow-red);
+    background-color: var(--orange);
     height: 130px;
 }
 
 .footer {
-    background-color: gray;
+    background-color: var(--orange);
     color: white;
     height: 50px;
     font-family: "Open Sans";
@@ -161,6 +189,21 @@ a:hover {
     text-align: center;
     padding-top: 20px;
     margin: 0;
+}
+
+.btn1:hover {
+    background-image: linear-gradient(45deg, #CD7F32, #A57164);
+    box-shadow: -1px 1px 10px #777777, 1px 1px 10px #777777;
+}
+
+.btn2:hover {
+    background-image: linear-gradient(45deg, #C0C0C0, #555555);
+    box-shadow: -1px 1px 10px #777777, 1px 1px 10px #777777;
+}
+
+.btn3:hover {
+    background-image: linear-gradient(45deg, #FFD700, #d4af37);
+    box-shadow: -1px 1px 10px #777777, 1px 1px 10px #777777;
 }
 
 .footer a {
