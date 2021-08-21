@@ -107,6 +107,7 @@ a:hover {
 
     #nav-bar {
         justify-content: flex-start;
+        font-size: 30px;
     }
 
     #form {
@@ -119,7 +120,11 @@ a:hover {
     }
 
     #header-img {
-        padding-right: 50px;
+        padding-right: 10px;
+    }
+
+    .links-container {
+        padding-right: 0;
     }
 }
 
