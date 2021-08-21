@@ -86,7 +86,7 @@ a:hover {
     display: flex;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 800px) {
     .set {
         margin: auto;
         width: 800px;
