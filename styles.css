@@ -56,16 +56,14 @@ a:hover {
     background-image: repeating-linear-gradient(45deg, var(--maximum-yellow-red) 0, var(--maximum-yellow-red) 1px, var(--maximum-yellow-red) 0, var(--lemon-meringue) 50%);
 }
 
-#video {
-    display: block;
-    padding: 180px 0 0;
-    margin: auto;
-}
-
 #email-box {
     border: none;
     width: 60%;
     padding: 10px;
+}
+
+section {
+    height: 500px;
 }
 
 #submit {
