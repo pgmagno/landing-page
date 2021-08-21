@@ -86,7 +86,7 @@ a:hover {
     display: flex;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 640px) {
     .set {
         margin: auto;
         width: 800px;
@@ -97,7 +97,7 @@ a:hover {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 640px) {
     .set {
         justify-content: center;
         align-items: center;
