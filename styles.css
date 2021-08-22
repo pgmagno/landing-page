@@ -115,6 +115,8 @@ a:hover {
 
 #header-burger {
     display: none;
+    width: 0;
+    height: 0;
 }
 
 @media (max-width: 800px) {
