@@ -13,7 +13,8 @@ html {
 
 body {
     margin: auto;
-    font-family: "Berkshire Swash";
+    font-family: "Nunito", sans-serif;
+    /* old font: "Berkshire Swash"*/
     background-color: black;
 }
 
@@ -98,7 +99,6 @@ a:hover {
 }
 
 .set {
-    font-family: "Open Sans";
     display: flex;
 }
 
@@ -116,7 +116,6 @@ a:hover {
 #header-burger {
     display: none;
     width: 0;
-    height: 0;
 }
 
 @media (max-width: 800px) {
@@ -145,15 +144,14 @@ a:hover {
         padding-right: 10px;
     }
 
-    .links-container {
-        padding-right: 0;
-        padding-left: 50px;
-        text-align: center;
-    }
-
     #header-burger {
         display: inline;
         width: 50px;
+    }
+
+    .links-container {
+        margin-right: 15px;
+        text-align: center;
     }
 
     .links-container a {
@@ -189,10 +187,6 @@ a:hover {
     }
 }
 
-.links-container {
-    padding-right: 50px;
-}
-
 .card {
     font-weight: bold;
     padding: 15px;
@@ -206,7 +200,6 @@ a:hover {
 
 .card button {
     font-size: 18px;
-    font-family: "Open Sans";
     font-weight: bold;
     margin: 15px;
     border: none;
@@ -217,6 +210,7 @@ a:hover {
 
 .card:hover {
     box-shadow: -1px 1px 10px cyan, 1px 1px 10px magenta;
+    transition: all 0.2s ease-in-out;
 }
 
 .card h2 {
@@ -249,7 +243,6 @@ a:hover {
     background-color: var(--orange);
     color: white;
     height: 50px;
-    font-family: "Open Sans";
     font-size: 16px;
     font-weight: bold;
     text-align: center;
@@ -258,21 +251,26 @@ a:hover {
 }
 
 .btn1:hover {
+    transition: all 0.2s ease-in-out;
     background-image: linear-gradient(45deg, #CD7F32, white, #A57164);
     box-shadow: -1px 1px 10px #777777, 1px 1px 10px #777777;
+    transition: all 0.2s ease-in-out;
 }
 
 .btn2:hover {
     background-image: linear-gradient(45deg, #C0C0C0, white, #777777);
     box-shadow: -1px 1px 10px #777777, 1px 1px 10px #777777;
+    transition: all 0.2s ease-in-out;
 }
 
 .btn3:hover {
     background-image: linear-gradient(45deg, #FFD700, white, #d4af37);
     box-shadow: -1px 1px 10px #777777, 1px 1px 10px #777777;
+    transition: all 0.2s ease-in-out;
 }
 
-.footer a {
+.pgsmagno {
+    color: var(--prussian-blue);
     text-decoration: none;
-    color: white;
+    font-size: 18px;
 }
